@@ -29,7 +29,7 @@ pip3 install matplotlib
 pip install imageio
 pip install opencv-python-headless
 pip install scikit-learn
-pip install skimage
+pip install scikit-image
 
 wget -c https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh
 bash Miniconda3-4.5.12-Linux-x86_64.sh -p /miniconda -b
