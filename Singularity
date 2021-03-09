@@ -25,11 +25,6 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         python3-dev
 rm -rf /var/lib/apt/lists/*
 pip3 install pipenv
-pip3 install matplotlib
-pip install imageio
-pip install opencv-python-headless
-pip install scikit-learn
-pip install scikit-image
 
 wget -c https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh
 bash Miniconda3-4.5.12-Linux-x86_64.sh -p /miniconda -b
@@ -38,6 +33,11 @@ PATH=/miniconda/bin:${PATH}
 
 conda update -y conda
 conda install pytorch==1.0.0 torchvision==0.2.1 cuda100 -c pytorch
+conda install -c conda-forge matplotlib
+conda install -c conda-forge imageio 
+conda install -c fastai opencv-python-headless
+conda install -c anaconda scikit-learn 
+conda install -c anaconda scikit-image
 cd /workspace
 
 %environment
