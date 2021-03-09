@@ -25,6 +25,12 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         python3-dev
 rm -rf /var/lib/apt/lists/*
 pip3 install pipenv
+pip3 install matplotlib
+pip install imageio
+pip install opencv-python-headless
+pip install scikit-learn
+pip install skimage
+
 wget -c https://repo.continuum.io/miniconda/Miniconda3-4.5.12-Linux-x86_64.sh
 bash Miniconda3-4.5.12-Linux-x86_64.sh -p /miniconda -b
 rm Miniconda3-4.5.12-Linux-x86_64.sh
