@@ -36,6 +36,11 @@ cd /workspace
 
 %environment
 export PATH=/miniconda/bin:${PATH}
-
+# Pipenv requires a certain terminal encoding.
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
+# This configures Pipenv to store the packages in the current working
+# directory.
+export PIPENV_VENV_IN_PROJECT=1
 
 %runscript
