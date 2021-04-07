@@ -6,6 +6,9 @@ AUTHOR zhiqi@inria.fr
 
 %setup
 mkdir -p ${SINGULARITY_ROOTFS}/opt/
+sudo ln -s /usr/local/cuda-10.1/targets/x86_64-linux/lib/libcublas.so.10.1 /usr/lib64/libcublas.so.10.0
+sudo ln -s /usr/local/cuda-10.1/targets/x86_64-linux/lib/libcusolver.so.10.1 /usr/lib64/libcusolver.so.10.0 
+sudo ln -s /usr/local/cuda-10.1/targets/x86_64-linux/lib/libcudart.so.10.1 /usr/lib64/libcudart.so.10.0 
 
 %environment
 export PYTHONPATH=/opt/
